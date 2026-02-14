@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Raleway", sans-serif;
+    background:#0a0a0a;
+    color:#fff;
+    scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.nav-link{
+    color:#fff;
+    font-weight:700;
+    transition:0.3s;
+    cursor: pointer;
+    margin-left:20px; 
+
+}
+
+.navbar .logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:#ff0000;
+}
+
+.nav-link:hover{
+    color:#ff0000;
+}
+
+/*  main  */
+
+.main{
+    background: url(../image/bg.webp) no-repeat; 
+    background-size:cover;
+    background-position:center;
+    width: 100%;
+    height: 100vh;
+}
+
+.main h1{
+    font-size:3rem;
+    font-weight:800;
+    color:#fff;
+}
+
+.main p{
+    font-size:1.2rem;
+    color:#ddd;
+    margin-top:20px;
+    font-weight: 600;
+}
+
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background: radial-gradient(circle at top right, #ff0000 0%, #0a0a0a 40%);
+}
+
+.hero h1{
+    font-size:3.2rem;
+    font-weight:800;
+    line-height:1.2;
+}
+
+.highlight{
+    color:#ff0000;
+}
+
+.btn-v12{
+    background:#ff0000;
+    border:none;
+    padding:14px 35px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-v12:hover{
+    background:#cc0000;
+    transform:scale(1.05);
+}
+
+/* SECTION */
+
+.section{
+    padding:90px 0;
+}
+
+.section-title{
+    font-weight:800;
+    margin-bottom:50px;
+    text-align:center;
+}
+
+/* CARDS */
+
+.service-card{
+    background:#141414;
+    padding:30px;
+    border-radius:15px;
+    transition:0.4s;
+    height:100%;
+}
+
+.service-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 15px 40px rgba(255,0,0,0.25);
+}
+
+.service-card h5{
+    font-weight:700;
+}
+
+/* AUTHORITY */
+
+.authority{
+    background:#111;
+    text-align:center;
+}
+
+/* PROCESS */
+
+.process-step{
+    text-align:center;
+}
+
+.process-number{
+    font-size:2rem;
+    font-weight:800;
+    color:#ff0000;
+}
+
+/* TRAFEGO */
+.trafego{
+    padding:100px 0;
+    text-align:center;
+}
+
+/* MODAL */
+.modal-content{
+    background:#1d1e1d;
+    color:#fff;
+    border-radius:15px;
+}
+.form-control{
+    background:#111;
+    border:none;
+    color:#fff;
+}
+
+/* CTA */
+
+.cta{
+    background:linear-gradient(90deg,#ff0000,#8B0000);
+    text-align:center;
+    padding:80px 0;
+}
+
+footer{
+    background:#000;
+    padding:20px;
+    text-align:center;
+    font-size:0.9rem;
+}
