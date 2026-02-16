@@ -327,6 +327,14 @@ background: linear-gradient(90deg, #ffffff, hwb(64 15% 3%), #c70000);
     text-align: center;
 }
 
+.arrow_:hover i {
+    transform: translate(5px, -5px);
+}
+
+.arrow_:hover {
+    color: #ff7c00;
+}
+
 /* MODAL */
 .modal-content {
     background: #1d1e1d;
@@ -355,9 +363,7 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     margin-top: auto;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    
 }
 
 @media (max-width: 991px) {
