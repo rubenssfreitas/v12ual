@@ -3,8 +3,11 @@
 body {
     font-family: "Raleway", sans-serif;
     background: #0a0a0a;
+    min-height: 100vh;
     color: var(--v12-light);
     scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
 }
 
 :root {
@@ -83,6 +86,13 @@ background: linear-gradient(90deg, #ffffff, hwb(64 15% 3%), #c70000);
     font-size: 3rem;
     font-weight: 800;
     color: var(--v12-light);
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); 
 }
 
 .nav-link:focus {
@@ -338,11 +348,16 @@ background: linear-gradient(90deg, #ffffff, hwb(64 15% 3%), #c70000);
     padding: 80px 0;
 }
 
+
 footer {
     background: #000;
     padding: 20px;
     text-align: center;
     font-size: 0.9rem;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 @media (max-width: 991px) {
@@ -354,12 +369,12 @@ footer {
     .main {
         background: url(../image/bg_mob.webp) no-repeat center;
         background-size: cover;
-        padding-top: 120px; /* empurra todo conteúdo para baixo */
+        padding-top: 80px; /* empurra todo conteúdo para baixo */
     }
 
     .main h1 {
         font-size: 2rem;
-        margin-top: 280px; /* desce apenas o título */
+        margin-top: 120px; /* desce apenas o título */
     }
 
 

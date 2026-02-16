@@ -19,3 +19,10 @@ window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbar");
   navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
+
+// Redirecionamento após envio do formulário
+document
+  .getElementById("hidden_iframe")
+  .addEventListener("load", function () {
+    window.location.href = "obrigado.html";
+  });

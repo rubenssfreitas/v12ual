@@ -203,8 +203,9 @@
             <div class="service-card">
               <h5 class="process-number">Diagramação</h5>
               <p>
-                Catálogos, ebooks, edição de vídeo, apresentações e materiais institucionais<br> de
-                alto padrão.
+                Catálogos, ebooks, edição de vídeo, apresentações e materiais
+                institucionais<br />
+                de alto padrão.
               </p>
             </div>
           </div>
@@ -398,26 +399,53 @@
         <div class="modal-content p-4">
           <h4>Solicitar Consultoria</h4>
 
-          <form id="leadForm">
+          <form
+            id="contactForm"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfPPiazq9UZYAzdI7Picbl9vOPeEz5AOTVbQUjAN7BRsuh9Og/formResponse"
+            method="POST"
+            target="hidden_iframe"
+          >
+            <div class="mb-3">
+              <label>Nome</label>
+              <input
+                type="text"
+                name="entry.2131502081"
+                class="form-control"
+                required
+              />
+            </div>
+
             <div class="mb-3">
               <label>Nome da Empresa</label>
-              <input type="text" class="form-control" required />
+              <input
+                type="text"
+                name="entry.1635970005"
+                class="form-control"
+                required
+              />
             </div>
 
             <div class="mb-3">
               <label>Email</label>
-              <input type="email" class="form-control" required />
+              <input
+                type="email"
+                name="entry.969843119"
+                class="form-control"
+                required
+              />
             </div>
 
             <div class="mb-3">
-              <label for="servico" class="form-label">Escolha o serviço</label>
-              <select class="form-select" id="servico" name="servico" required>
-                <option value="" selected disabled>Selecione um serviço</option>
-                <option value="identidade-visual">Identidade Visual</option>
-                <option value="social-media">Social Media</option>
-                <option value="gestao-trafego">Gestão de Tráfego</option>
-                <option value="diagramacao">Diagramação</option>
-                <option value="projetos">Projeto personalizado</option>
+              <label class="form-label">Escolha o serviço</label>
+              <select class="form-select" name="entry.1880207205" required>
+                <option value="" disabled selected>Selecione um serviço</option>
+                <option value="Identidade Visual">Identidade Visual</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Gestão de Tráfego">Gestão de Tráfego</option>
+                <option value="Diagramação">Diagramação</option>
+                <option value="Projeto Personalizado">
+                  Projeto personalizado
+                </option>
               </select>
             </div>
 
@@ -425,6 +453,8 @@
               Enviar Solicitação
             </button>
           </form>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display: none">
+          </iframe>
 
           <div
             id="successMessage"
@@ -465,6 +495,22 @@
     <script src="assets/js/script.js"></script>
     <script>
       AOS.init();
+
+      let formEnviado = false;
+
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function () {
+          formEnviado = true;
+        });
+
+      document
+        .getElementById("hidden_iframe")
+        .addEventListener("load", function () {
+          if (formEnviado) {
+            window.location.href = "enviado.html";
+          }
+        });
     </script>
   </body>
 </html>
