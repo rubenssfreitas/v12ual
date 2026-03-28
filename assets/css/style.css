@@ -30,6 +30,15 @@ background: linear-gradient(90deg, #ffffff, hwb(64 15% 3%), #c70000);
 */
 
 /* NAVBAR */
+a {
+    text-decoration: none !important;
+    color: white;
+    transition: 0.3s;
+}
+a:hover {
+    color: #e2d304; 
+    font-weight: 700;
+}
 
 .navbar {
     display: flex;
@@ -41,8 +50,9 @@ background: linear-gradient(90deg, #ffffff, hwb(64 15% 3%), #c70000);
 }
 
 .navbar.scrolled {
-    background: #000; /* ou a cor da sua marca */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: #000;
+    /* ou a cor da sua marca */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar a {
@@ -92,7 +102,7 @@ background: linear-gradient(90deg, #ffffff, hwb(64 15% 3%), #c70000);
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4); 
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .nav-link:focus {
@@ -160,13 +170,14 @@ background: linear-gradient(90deg, #ffffff, hwb(64 15% 3%), #c70000);
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     z-index: 999;
 }
 
 .btn-top:hover {
-    background-color: #ff0000; /* pode trocar pela cor da V12 */
+    background-color: #ff0000;
+    /* pode trocar pela cor da V12 */
     transform: translateY(-5px);
 }
 
@@ -358,13 +369,13 @@ background: linear-gradient(90deg, #ffffff, hwb(64 15% 3%), #c70000);
 
 
 .rodape {
-   background: #0a0a0a;
+    background: #0a0a0a;
     padding: 40px;
     text-align: center;
     font-size: 0.9rem;
     margin-top: auto;
     color: #fff;
-    
+
 }
 
 .rodape a:hover {
@@ -377,17 +388,19 @@ background: linear-gradient(90deg, #ffffff, hwb(64 15% 3%), #c70000);
     .sidebar {
         background-color: rgba(252, 255, 255, 0.15);
         backdrop-filter: blur(10px);
-    }   
+    }
 
     .main {
         background: url(../image/bg_mob.webp) no-repeat center;
         background-size: cover;
-        padding-top: 80px; /* empurra todo conteúdo para baixo */
+        padding-top: 80px;
+        /* empurra todo conteúdo para baixo */
     }
 
     .main h1 {
         font-size: 2rem;
-        margin-top: 120px; /* desce apenas o título */
+        margin-top: 120px;
+        /* desce apenas o título */
     }
 
     .rodape .row {
@@ -406,4 +419,3 @@ background: linear-gradient(90deg, #ffffff, hwb(64 15% 3%), #c70000);
 
 
 }
-
