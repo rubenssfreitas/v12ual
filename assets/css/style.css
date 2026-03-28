@@ -29,7 +29,7 @@ background: linear-gradient(90deg, #ffffff, hwb(64 15% 3%), #c70000);
     -webkit-text-fill-color: transparent;
 */
 
-/* NAVBAR */
+/* NAVBAR a */
 a {
     text-decoration: none !important;
     color: white;
@@ -39,6 +39,8 @@ a:hover {
     color: #e2d304; 
     font-weight: 700;
 }
+
+
 
 .navbar {
     display: flex;
